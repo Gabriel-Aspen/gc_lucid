@@ -1,5 +1,5 @@
 # GC Lucid
-
+See visual.ipynb for examples
 ## Required modules
 - pandas
 - numpy
