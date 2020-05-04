@@ -1,5 +1,4 @@
 # GC Lucid
-Our version of a turnkey data visualization package
 
 ## Required modules
 - pandas
