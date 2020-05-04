@@ -1,12 +1,20 @@
 from sklearn.ensemble import RandomForestClassifier
 
-'''
-inputs:
-x = dataframe of input columns
-Y = dataframe of target column
-'''
 
 def feature_importance(x, y):
+
+	'''
+	Using random forest, will return feature importances
+
+	Attributes:
+	x = dataframe of input columns
+	Y = dataframe of target column
+
+	Output:
+
+	Features sorted by their score:
+	[(0.570, 'col1'), (0.351, 'col2'), .. etc..]
+	'''
 
 	rfc = RandomForestClassifier()
 
