@@ -9,10 +9,23 @@ See visual.ipynb for examples
 
 ## Functions
 ### tsnetools.py
-Quickly generate a 2d tsne plot of a dataset. Specify 'target' column of the dataset to color the plot by. Target can be categorical or numeric
+Generates a 2d tsne plot of a dataset. Plot is colored by label (y)
 - numeric_tsne()
 - categorical_tsne()
 ### violin.py
-Create violin plots for all variables using the unique features of the 'target' column as the x axis. For example, if political party was your target column, each plot would have two violins: republican and democrat.
+Create violin plots for each condition of the label (y) for all features simultaneously
 - numeric()
 - categorical()
+###feature_importance.py
+Using random forest, will return feature importances
+###	Printing the first few commmands a notebook typically starts with
+	1. first 5 rows
+	2. column types
+	3. Relative NaN values
+	4. Show numeric and categorical columns, then assign to variables
+### datasets.py
+Calling a function returns a pd DataFrame of a pre-selected dataset
+- wine quality
+- voting records
+- mushroom attributes
+- yeast protein localization sites
