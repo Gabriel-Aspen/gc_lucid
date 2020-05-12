@@ -1,5 +1,11 @@
 from sklearn.ensemble import RandomForestClassifier
-
+import numpy as np
+import pandas as pd
+'''
+Notes:
+- May use feature_importance in other functions to find top (10ish) features
+- Added a 'return' to make this easier
+'''
 
 def feature_importance(x, y):
 
@@ -20,9 +26,10 @@ def feature_importance(x, y):
 
 	names = x.columns.values
 
-	rfc.fit(x,Y)
+	rfc.fit(x,y)
 
 	print("Features sorted by importance: ")
-	print(sorted(zip(map(lambda x: round(x, 4), rfc.feature_importances_), names, reverse=True)))
+	print(np.array(sorted(zip(map(lambda x: round(x, 4),
+	rfc.feature_importances_), names), reverse=True)))
 
-
+	return np.array(sorted(zip(map(lambda x: round(x, 4), rfc.feature_importances_), names), reverse=True))
