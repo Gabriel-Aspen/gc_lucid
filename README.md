@@ -36,7 +36,6 @@ Calling a function returns a pd DataFrame of a pre-selected dataset
 - yeast protein localization sites
 ### nulls.py
 Display null counts using plotly bar chart
-=======
 1. first 5 rows
 2. column types
 3. Relative NaN values
@@ -47,4 +46,3 @@ Calling one of the functions returns a pd DataFrame of a pre-selected dataset
 - voting() - voting records
 - mushroom() - mushroom attributes
 - yeast() - yeast protein localization sites
->>>>>>> 9210b761a5d8ac236e10af82fef99d178387fba4
